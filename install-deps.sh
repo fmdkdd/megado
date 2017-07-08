@@ -12,23 +12,23 @@ popd
 # GLEW
 pushd deps/glew/
 pushd auto
-make
+nmake
 popd
 pushd build
 cmake ./cmake
-make
+cmake --build .
 popd
 popd
 
 # cimgui
 pushd deps/cimgui/cimgui
-make
+nmake
 popd
 
 # json-c
 pushd deps/json-c
 sh autogen.sh
 ./configure --prefix=$PWD
-make
-make install
+nmake
+nmake install
 popd
