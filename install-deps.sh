@@ -5,7 +5,7 @@ pushd deps/glfw/
 mkdir build
 pushd build
 cmake -DBUILD_SHARED_LIBS=ON ../
-make
+cmake --build
 popd
 popd
 
